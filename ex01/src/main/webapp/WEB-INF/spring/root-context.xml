@@ -44,5 +44,7 @@
         <constructor-arg name="sqlSessionFactory" ref="SqlSessionFactory"></constructor-arg>
     </bean>
 	
+	<mybatis-spring:scan base-package="org.zerock.mapper"/>
+	
 	<context:component-scan base-package="org.zerock.sample"></context:component-scan>	
 </beans>
